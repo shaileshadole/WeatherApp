@@ -31,21 +31,23 @@ const App = () => {
 
   //Your Location
   const yourLocation = () => {
-    setLoading(true);
     if (navigator.geolocation) {
+      setLoading(true);
       navigator.geolocation.getCurrentPosition(
-        (pos) => {
+        async (pos) => {
           const { latitude, longitude } = pos.coords;
-          fetchHomeWeather(latitude, longitude);
+          await fetchHomeWeather(latitude, longitude);
+          setLoading(false);
         },
         (err) => {
           console.error("Location access Denied: ", err);
+          setLoading(false);
         }
       );
     } else {
       console.error("Geolocation not supported by this browser.");
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   //Changing the background color of body
@@ -85,8 +87,8 @@ const App = () => {
 
         {data === null ? <NoWeather /> : <WeatherCard data={data} />}
 
-        <button className={styles.yourLocation} onClick={() => yourLocation()}>
-          Get Weather of Your Location
+        <button disabled={loading} className={styles.yourLocation} onClick={() => yourLocation()}>
+          { loading ? "Loading..." : "Get Weather of Your Location" }
         </button>
         <footer className={styles.appFooter}>
           <p>© {new Date().getFullYear()} Weather App</p>
