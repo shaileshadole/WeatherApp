@@ -23,7 +23,7 @@ const Query = ({setData, setLoading}) => {
     //Setting up the co-ordinates from the given location
     try {
       const geoRes = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=${apiKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=${apiKey}`
       );
 
       if (geoRes.data.length === 0) {

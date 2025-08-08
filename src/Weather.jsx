@@ -8,7 +8,7 @@ const Weather = ({ data }) => {
     const fetchData = async () => {
         const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
         try{
-            const res = await axios.get(`http://api.openweathermap.org/geo/1.0/reverse?lat=${data.coord.lat}&lon=${data.coord.lon}&limit=1&appid=${apiKey}`);
+            const res = await axios.get(`https://api.openweathermap.org/geo/1.0/reverse?lat=${data.coord.lat}&lon=${data.coord.lon}&limit=1&appid=${apiKey}`);
             setLocation(res.data[0].name);
         }catch(error){
             console.log(error);            
