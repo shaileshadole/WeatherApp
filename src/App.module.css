@@ -1,0 +1,87 @@
+body{
+  color: white;
+  min-height: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container0{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container{
+  width: 100%;
+  max-width: 28rem;
+}
+
+
+/* Background Classes */
+.defaultBG {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.clearDay {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+}
+
+.clearNight {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.cloudy {
+  background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+}
+
+.rainy {
+  background: linear-gradient(135deg, #4ca1af 0%, #2c3e50 100%);
+}
+
+.snowy {
+  background: linear-gradient(135deg, #e6dada 0%, #274046 100%);
+}
+
+.stormy {
+  background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+}
+
+.foggy {
+  background: linear-gradient(135deg, #606c88 0%, #3f4c6b 100%);
+}
+
+.yourLocation {
+    background-color: #7c3aed;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.yourLocation:hover {
+    background-color: #6d28d9;
+}
+
+
+
+/* footer */
+.appFooter{
+  margin-top: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}

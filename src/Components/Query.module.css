@@ -1,0 +1,111 @@
+.QueryContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Header Style */
+.QueryContainer .appHeader{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.QueryContainer .appHeader h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.QueryContainer .appHeader p{
+    opacity: 0.8;
+}
+
+/* Search Form */
+.QueryContainer .searchform{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%; /* by chatgpt */
+}
+
+.QueryContainer .searchinputcontainer{
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+
+.QueryContainer .searchinput {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.QueryContainer .searchinput:focus {
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.5);
+}
+
+.QueryContainer .searchicon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+}
+
+.QueryContainer .searchbutton {
+
+    background-color: #7c3aed;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.QueryContainer .searchbutton:hover {
+    background-color: #6d28d9;
+}
+
+.QueryContainer .searchbutton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.QueryContainer form{
+
+}
+
+/* .QueryContainer form input{
+
+    height: 40px;
+    border-radius: 40px;
+    width: 100%;
+
+}   
+
+
+.QueryContainer form button{
+    min-width: 90px;
+    border-radius: 40px;
+
+    font-weight: 500;
+
+    background-color: var(--color-button);
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    outline: none;
+
+}    */

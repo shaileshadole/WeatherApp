@@ -1,0 +1,33 @@
+:root {
+  /* Primary Theme Color */
+  --color-primary: #8164e8;
+  --color-primary-hover: #6e4fdc;
+
+  --color-green: #23bc74;
+  --color-green-hover: #1ca463;
+
+  --color-button: #7c3aed;
+
+  /* Backgrounds */
+  --color-bg: #131219;
+  --color-container: #1d1c23;
+  --color-container2: #2a292f;
+  --color-container2-hover: #34333a;
+
+  /* Text */
+  --color-text: #ffffff;
+  --color-text-p: #dcdbf2;
+  --color-text-aaa : #aaa;
+  --color-text-muted: #d9d9d9;
+
+  /* Accent Colors */
+  --color-accent-green: #2dd4bf;
+  --color-accent-gold: #facc15;
+  --color-accent-indigo: #6366f1;
+  --color-error: #ef4444;
+
+  /* Optional */
+  --color-accent-pink: #f472b6;
+  --color-accent-muted-green: #4ade80;
+  --color-border-gray: #3f3f46;
+}

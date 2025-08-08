@@ -1,0 +1,23 @@
+.welcomeMessage{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.welcomeIcon{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.welcomeMessage h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.welcomeMessage p {
+    opacity: 0.8;
+}

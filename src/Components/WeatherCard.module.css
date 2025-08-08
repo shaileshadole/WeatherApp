@@ -1,0 +1,88 @@
+.weatherCard {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: white;
+    box-sizing: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.weatherHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.weatherHeader h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weatherDate {
+    opacity: 0.8;
+    font-size: 0.875rem;
+}
+
+.unitToggle {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+
+.weatherMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.weatherIcon{
+    font-size: 4rem;
+}
+
+.weatherTemp {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.weatherDesc {
+    opacity: 0.9;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.weatherDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.detailItem{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.detailIcon {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.detailLabel{
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+.detailValue {
+    font-size: 1rem;
+    font-weight: 500;
+}
