@@ -81,9 +81,6 @@ src/
 📸 Screenshots
 ```
 
-## 📝 License
-This project is licensed under the MIT License – feel free to modify and use it.
-
 ## 💡 Future Improvements
 Add hourly & 7-day forecast
 
